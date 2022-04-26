@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: tf-sample-app
+  name: tf-helm-app1
   namespace: argocd
 spec:
   destination:
     name: ''
-    namespace: tf-test
+    namespace: tf-test-1
     server: 'https://5F91010DF6246621B3275CF388EDA58F.gr7.us-east-1.eks.amazonaws.com'
   source:
     path: dev
